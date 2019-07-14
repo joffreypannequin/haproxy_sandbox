@@ -1,5 +1,5 @@
 <?php
 
-usleep(100000);
+usleep(1000);
 
-echo "Serving from Apache Server 2";
+echo "Serving static from Apache Server 2";
