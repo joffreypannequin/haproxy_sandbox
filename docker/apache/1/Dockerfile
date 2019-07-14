@@ -1,3 +1,3 @@
-FROM httpd:2.4
- 
-COPY index.html /usr/local/apache2/htdocs/index.html
+FROM php:7.2-apache
+
+COPY index.php /var/www/html/
