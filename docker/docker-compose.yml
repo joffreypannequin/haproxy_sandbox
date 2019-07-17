@@ -4,6 +4,10 @@ services:
     apache_img_1:
         container_name: ${COMPOSE_PROJECT_NAME}_apache_con_1
         build: ./apache/1
+        ports:
+            - 8081:80
+        expose:
+            - 80
         expose:
             - ${APACHE_EXPOSED_PORT}
         networks:
